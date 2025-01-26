@@ -53,7 +53,7 @@ public class CartServlet extends HttpServlet {
             if (!itemExists) {
                 // Create a new cart item
                 CartItemDTO cartItem = new CartItemDTO(
-                        productId, productName, productPrice, quantity, productPrice * quantity,imageURL
+                        productId, productName, productPrice, quantity, productPrice * quantity, imageURL
                 );
                 cart.add(cartItem);
             }
@@ -85,5 +85,18 @@ public class CartServlet extends HttpServlet {
         // Redirect to the cart page
         resp.sendRedirect("add-cart.jsp");
     }
-}
 
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        HttpSession session = req.getSession();
+        String action = req.getParameter("action");
+
+        if ("checkout".equalsIgnoreCase(action)) {
+            // Forward user and cart details to checkout.jsp
+            req.getRequestDispatcher("checkout.jsp").forward(req, resp);
+        } else {
+            // Redirect to the add-cart.jsp by default
+            resp.sendRedirect("add-cart.jsp");
+        }
+    }
+}
