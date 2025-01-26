@@ -155,7 +155,6 @@
         <!-- Sidebar -->
         <nav class="col-md-3 col-lg-2 d-md-block sidebar">
             <div class="position-sticky">
-                <h3 class="text-center py-4">Admin Menu</h3>
                 <ul class="nav flex-column px-3">
                     <li class="nav-item">
                         <a class="nav-link active" href="admin.jsp">
@@ -217,11 +216,11 @@
                 <!-- Users Card -->
                 <div class="col-md-4">
                     <div class="card shadow-sm mb-4 card-border-bottom">
-                        <img src="images/user.png" class="card-img-top" alt="Users">
+                        <img src="images/manage%20users.jpg" class="card-img-top" alt="Users">
                         <div class="card-body">
                             <h5 class="card-title">Manage Users</h5>
                             <p class="card-text">Manage and oversee all registered users.</p>
-                            <a href="admin-login.jsp" class="btn btn-success">Register Users</a>
+                            <a href="admin-register.jsp" class="btn btn-success">Register Users</a>
                             <a href="user-list" class="btn btn-info">View Users</a>
                         </div>
                     </div>
@@ -243,7 +242,7 @@
                 <!-- Orders Card -->
                 <div class="col-md-4">
                     <div class="card shadow-sm mb-4">
-                        <img src="images/easy-ordering.webp" class="card-img-top" alt="Orders">
+                        <img src="images/orders.jpg" class="card-img-top" alt="Orders">
                         <div class="card-body">
                             <h5 class="card-title">Manage Orders</h5>
                             <p class="card-text">Track and process pending and completed orders.</p>

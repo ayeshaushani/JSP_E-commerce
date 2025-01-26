@@ -66,7 +66,7 @@ public class ProductNew extends HttpServlet {
         String imagePath = null;
         if (productImagePart != null && productImagePart.getSize() > 0) {
             String fileName = productImagePart.getSubmittedFileName();
-            String uploadDir = getServletContext().getRealPath("/") + "uploads";
+            String uploadDir = getServletContext().getRealPath("/") + "images";
 
             // Ensure the directory exists
             File dir = new File(uploadDir);
