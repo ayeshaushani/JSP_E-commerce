@@ -25,7 +25,7 @@
         .navbar-brand {
             font-size: 1.75rem;
             font-weight: bold;
-            color: #f0c14b !important;
+            color: #079582 !important;
         }
 
         .navbar-nav .nav-link {

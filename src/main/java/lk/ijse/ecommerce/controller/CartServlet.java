@@ -30,6 +30,9 @@ public class CartServlet extends HttpServlet {
             cart = new ArrayList<>();
         }
 
+        // Debugging: Print out the action
+        System.out.println("Action: " + action);
+
         if ("add".equalsIgnoreCase(action) || action == null) {
             // Retrieve product details from the request
             int productId = Integer.parseInt(req.getParameter("product_id"));
@@ -58,7 +61,7 @@ public class CartServlet extends HttpServlet {
                 cart.add(cartItem);
             }
 
-            // Save cart back to the session
+            // Save updated cart back to the session
             session.setAttribute("cart", cart);
         } else if ("update".equalsIgnoreCase(action)) {
             // Update cart item quantity
@@ -73,14 +76,19 @@ public class CartServlet extends HttpServlet {
                 }
             }
 
+            // Save updated cart back to the session
             session.setAttribute("cart", cart);
         } else if ("remove".equalsIgnoreCase(action)) {
             // Remove item from the cart
             int productId = Integer.parseInt(req.getParameter("product_id"));
             cart.removeIf(item -> item.getProductId() == productId);
 
+            // Save updated cart back to the session
             session.setAttribute("cart", cart);
         }
+
+        // Debugging: Print cart contents
+        System.out.println("Cart size after action: " + cart.size());
 
         // Redirect to the cart page
         resp.sendRedirect("add-cart.jsp");
