@@ -15,7 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f3f3f3;
+            background-color: #8ce6d9;
             display: flex;
             align-items: center;
             justify-content: center;

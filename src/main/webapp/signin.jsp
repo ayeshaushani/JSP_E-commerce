@@ -15,7 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #ffffff;
+            background-color: #68f1eb;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -43,12 +43,12 @@
             text-align: center;
         }
         .btn-yellow {
-            background-color: #f0c14b;
-            border-color: #a88734;
+            background-color: #03a4c3;
+            border-color: #121111;
             color: #000;
         }
         .btn-yellow:hover {
-            background-color: #ddb347;
+            background-color: #2aae48;
         }
         .divider {
             margin: 20px 0;
@@ -73,8 +73,12 @@
 <body>
 <div class="form-container">
     <h2 class="form-title">Sign in</h2>
+    <!-- Display error message -->
+    <c:if test="${not empty errorMessage}">
+        <p class="error-message">${errorMessage}</p>
+    </c:if>
 <%--    <form action="index.jsp">--%>
-    <form action="new-product-list">
+    <form action="check-out.jsp">
         <!-- Email or Phone Field -->
         <div class="mb-3">
             <label for="email" class="form-label">Email or mobile phone number</label>
