@@ -74,7 +74,7 @@ public class ProductNew extends HttpServlet {
                 dir.mkdirs();
             }
 
-            imagePath = "uploads/" + fileName;
+            imagePath = "images/" + fileName;
             Path filePath = Path.of(uploadDir, fileName);
 
             try (InputStream fileContent = productImagePart.getInputStream()) {
