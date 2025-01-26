@@ -151,7 +151,7 @@
                         <div class="card-body">
                             <h5 class="card-title"><b>Manage Orders</b></h5>
                             <p class="card-text">Track and process pending and completed orders.</p>
-                            <a href="#" class="btn btn-warning">View Orders</a>
+                            <a href="order-list" class="btn btn-warning">View Orders</a>
                         </div>
                     </div>
                 </div>
