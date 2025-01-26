@@ -18,7 +18,7 @@
         /* Hero Section Styling */
         .hero {
             height: 100vh;
-            background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed; /* Replace with your image URL */
+            background:#B1F0F7 ;
             background-size: cover;
             display: flex;
             align-items: center;
@@ -69,13 +69,13 @@
         }
 
         .btn-custom-primary {
-            background-color: #0d6efd;
+            background-color: #2aae48;
             color: #fff;
         }
 
         .btn-custom-primary:hover {
-            background-color: #0056b3;
-            box-shadow: 0px 4px 10px rgba(13, 110, 253, 0.3);
+            background-color: #16ead0;
+            box-shadow: 0px 4px 10px rgba(9, 47, 103, 0.3);
         }
 
         .btn-custom-outline {
@@ -93,7 +93,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#">E-Shop</a>
+        <a class="navbar-brand fw-bold" href="#">JOY-PARCEL</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -111,8 +111,8 @@
 <!-- Hero Section -->
 <section class="hero">
     <div class="hero-content text-center">
-        <h1>Welcome to E-Shop</h1>
-        <p>Discover incredible products and exclusive deals tailored just for you!</p>
+        <h1>Welcome to JOY-PARCEL</h1>
+        <p>Unwrap happiness with Joy-Parcel – Your one-stop online gift shop for personalized surprises and amazing deals</p>
         <div>
             <a href="signup.jsp" class="btn btn-custom btn-custom-primary me-2">Sign Up Now</a>
             <a href="signin.jsp" class="btn btn-custom btn-custom-outline">Sign In</a>
