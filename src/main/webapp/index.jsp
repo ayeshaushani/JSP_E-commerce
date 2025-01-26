@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Platform</title>
+    <title>E-Commerce System</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -32,7 +32,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            color: white;
+            color: #a2dbed;
             padding: 0 20px;
             box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.6); /* Adds a dark overlay effect */
             position: relative;
@@ -122,19 +122,20 @@
                 <li class="nav-item">
                     <a class="nav-link" href="signin.jsp">Login</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="update-product.jsp">Cart <span class="badge bg-primary"></span></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="admin.jsp"><i class="fa-solid fa-gear" style="color: #121212; font-size: 1.5rem;"></i>
-                </a>
+                <a class="nav-link" href="admin.jsp"><i class="fa-solid fa-gear" style="color: #121212; font-size: 1.5rem;"></i></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link btn btn-warning" href="logout.jsp">Logout</a>
             </li>
             </ul>
         </div>
     </div>
 </nav>
-
-<!-- Hero Section -->
 
 <!-- Hero Carousel -->
 <div class="hero">
